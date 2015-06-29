@@ -174,9 +174,6 @@ var define, requireModule, require, requirejs;
       var part = parts[i];
 
       if (part === '..') {
-        if (parentBase.length === 0) {
-          throw new Error('Cannot access parent module of root');
-        }
         parentBase.pop();
       } else if (part === '.') {
         continue;
